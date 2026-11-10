@@ -2,7 +2,7 @@
 
 **Input**: [spec.md](spec.md), [plan.md](plan.md), [research.md](research.md), [data-model.md](data-model.md), and [contracts/](contracts/).
 
-**Path convention**: Implementation paths below are relative to the **proposed, separately created `lego-cv-lab` repository root**. This planning package remains in the OAK playground until the target repository is established. The current House V, Orin identity, and Unitree L2 code are outside this feature. `[P]` marks ready work in separate files that can be assigned in parallel.
+**Path convention**: Implementation paths below are relative to this repository root. The current House V, Orin identity, and Unitree L2 code are outside this feature. `[P]` marks ready work in separate files that can be assigned in parallel.
 
 ## Phase 1: Setup
 
@@ -106,11 +106,11 @@
 
 ## Provisional Issue Mapping and Incremental Delivery
 
-The OAK playground currently holds planning issues. Transfer or recreate them in the separate `lego-cv-lab` repository once its location is chosen, preserving links and scope history.
+The planning issues were transferred from the OAK playground into this repository, preserving their discussion history.
 
-1. **Issue #3, repository and OAK snapshots (MVP)**: T001-T015 and T041. Independent import precedes physical OAK capture.
-2. **Issue #4, taxonomy, reviewed annotations, and frozen dataset**: T016-T024.
-3. **Issue #6, actual fine-tuning, scratch comparison, and training CLI**: T025-T031 and T042. Use identical held-out images and disclose budget differences. OAK conversion/deployment remains a later gate.
-4. **Issue #5, staged benchmark, local browser, findings, and final regression**: T032-T040.
+1. **Issue #1, repository and OAK snapshots (MVP)**: T001-T015 and T041. Independent import precedes physical OAK capture.
+2. **Issue #2, taxonomy, reviewed annotations, and frozen dataset**: T016-T024.
+3. **Issue #4, actual fine-tuning, scratch comparison, and training CLI**: T025-T031 and T042. Use identical held-out images and disclose budget differences. OAK conversion/deployment remains a later gate.
+4. **Issue #3, staged benchmark, local browser, findings, and final regression**: T032-T040.
 
-Existing cross-camera fusion issue #2 and dense-scene benchmark issue #1 are unrelated to this standalone study. The earlier L2 planning issue #7 is closed and supplies no task here.
+The separate OAK playground retains its cross-camera fusion and dense-scene work. Its earlier L2 planning issue was closed and supplies no task here.

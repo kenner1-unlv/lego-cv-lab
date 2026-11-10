@@ -1,10 +1,10 @@
 # Implementation Plan: Standalone LEGO CV Lab
 
-**Planning branch**: `plan/multisensor-ml-workflow` | **Date**: 2026-11-09 | **Spec**: [spec.md](spec.md)
+**Planning branch**: `plan/lego-cv-lab` | **Date**: 2026-11-09 | **Spec**: [spec.md](spec.md)
 
 ## Summary
 
-Build a focused, reproducible LEGO piece recognition lab. The OAK 4 initially supplies RGB snapshots through repeatable import; acquisition automation may follow. Human-reviewed annotations become a versioned dataset. Train an instance detector or segmenter by fine-tuning suitable pretrained weights, then compare a from-scratch run with disclosed data and budget. Evaluate piece count, instance localization/masks, color, size or footprint, separation, and orientation robustness on frozen scene-grouped test data. A simple local image/run browser is optional once the core CLI workflow works. The proposed implementation home is a separate `lego-cv-lab` repository so the existing OAK spatial viewer remains a distinct project. This planning package lives here until the target repository is established.
+Build a focused, reproducible LEGO piece recognition lab in this repository. The OAK 4 initially supplies RGB snapshots through repeatable import; acquisition automation may follow. Human-reviewed annotations become a versioned dataset. Train an instance detector or segmenter by fine-tuning suitable pretrained weights, then compare a from-scratch run with disclosed data and budget. Evaluate piece count, instance localization/masks, color, size or footprint, separation, and orientation robustness on frozen scene-grouped test data. A simple local image/run browser is optional once the core CLI workflow works. The existing OAK spatial viewer remains a distinct project.
 
 ## Technical Context
 
@@ -43,7 +43,7 @@ Build a focused, reproducible LEGO piece recognition lab. The OAK 4 initially su
 
 ## Project Structure
 
-### Planning artifacts in this repository
+### Planning artifacts
 
 ```text
 specs/001-lego-cv-lab/
@@ -58,7 +58,7 @@ specs/001-lego-cv-lab/
 └── tasks.md
 ```
 
-### Proposed implementation in standalone `lego-cv-lab`
+### Implementation in this repository
 
 ```text
 lego_cv_lab/
@@ -72,7 +72,7 @@ protocols/          # board setup and progressive challenge definitions
 findings/           # Git-safe benchmark summaries
 ```
 
-**Structure decision**: Separate experiment code and data contracts from the existing spatial-segmentation app. The OAK is an image source initially; the current House V UI, Orin identity bridge, mono detector, DINO embedding, stereo depth, and Unitree L2 relay are neither prerequisites nor sources of claimed LEGO ground truth. The Orin can run training, but a workstation is equally valid. Exact repository creation and remote location are an owner workflow decision.
+**Structure decision**: Separate experiment code and data contracts from the existing spatial-segmentation app. The OAK is an image source initially; the current House V UI, Orin identity bridge, mono detector, DINO embedding, stereo depth, and Unitree L2 relay are neither prerequisites nor sources of claimed LEGO ground truth. The Orin can run training, but a workstation is equally valid. This public repository is the implementation home.
 
 ## Delivery Sequence
 

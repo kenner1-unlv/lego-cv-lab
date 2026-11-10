@@ -4,7 +4,7 @@ This is an acceptance guide for a planned implementation, not a claim that the c
 
 ## Prerequisites
 
-- Establish the proposed standalone repository and a pinned Python environment. Configure a data root outside Git for images, annotations, checkpoints, and predictions.
+- Use this repository with a pinned Python environment. Configure a data root outside Git for images, annotations, checkpoints, and predictions.
 - Prepare synthetic fixture images for deterministic tests and, separately, OAK 4 RGB snapshots with source/device and capture-time metadata.
 - Inventory around 20 mixed-color, mixed-size LEGO pieces and a board. Fix camera pose/distance and lighting. Record the shake procedure and verify all baseline pieces are flat, separated, non-touching, and non-overlapping. Record actual count rather than assuming exactly 20.
 - Define and version color, footprint/size, partly visible, unknown, and instance geometry rules before labeling.

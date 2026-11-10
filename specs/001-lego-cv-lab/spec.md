@@ -1,6 +1,6 @@
 # Feature Specification: Standalone LEGO CV Lab
 
-**Feature Branch**: plan/multisensor-ml-workflow
+**Feature Branch**: plan/lego-cv-lab
 **Created**: 2026-11-09
 **Status**: Draft, revised for corrected scope
 **Input**: Collect OAK 4 snapshots of LEGO pieces, annotate them, train and compare instance-recognition models, and measure results on progressively harder scenes.

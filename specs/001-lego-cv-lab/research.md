@@ -4,7 +4,7 @@
 
 ## Standalone project boundary
 
-**Decision**: Recommend a separate `lego-cv-lab` repository, with this Spec Kit package as the proposal/backlog until that repo is established. The OAK 4 initially supplies RGB snapshots. Existing House V, Orin identity, mono fusion, and Unitree L2 code are outside the first implementation.
+**Decision**: Use this separate `lego-cv-lab` repository for the experiment code and Spec Kit plan. The OAK 4 initially supplies RGB snapshots. Existing House V, Orin identity, mono fusion, and Unitree L2 code are outside the first implementation.
 
 **Rationale**: The user's central task is to train and evaluate a LEGO piece detector or segmenter against human truth. Reusing a spatial viewer and multi-sensor fusion service would add dependencies without improving the first controlled benchmark. A standalone codebase makes its taxonomy, dataset, training runs, and findings reviewable as an ML project.
 
