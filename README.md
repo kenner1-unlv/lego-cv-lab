@@ -36,3 +36,8 @@ are separate work and are not required for this lab.
 Raw images, private scenes, model weights, and generated runs belong in an
 external data directory and are excluded from Git. The public history will
 contain code, protocols, synthetic fixtures, and reviewed findings.
+
+The [feature specification](specs/001-lego-cv-lab/spec.md),
+[implementation plan](specs/001-lego-cv-lab/plan.md), and
+[ordered tasks](specs/001-lego-cv-lab/tasks.md) explain the experiment and its
+current implementation sequence.
